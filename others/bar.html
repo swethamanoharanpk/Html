@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <style>
+    .custom-carousal {
+      width: 50%;
+      margin: auto;
+    }
+
+    .carousel-inner {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+      margin-top: 70px;
+
+    }
+
+    .card-group img {
+      height: 300px;
+      width: 300px;
+    }
+    
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Media</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
+        aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+        aria-labelledby="offcanvasDarkNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Media</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+            aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Dropdown
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex mt-3" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div id="carouselExampleIndicators" class="carousel slide custom-carousal">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./image/03-shutterstock_97696616.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item h-50">
+        <img src="./image/istockphoto-517188688-612x612.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="./image/492eae2a2cb510811a26041b9de36acb.jpg" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <br>
+
+
+
+  <div class="card-group">
+    <div class="card border border-primary">
+      <img src="./image/istock-478831658.webp" class="card-img-top rounded mx-auto d-block mt-3" alt="...">
+      <div class="card-body text-center">
+        <h5 class="card-title">Taj Mahal</h5>
+        <p class="card-text">Welcome to Taj Mahal, Standing majestically on the banks of River Yamuna. Taj Mahal Taj
+          Mahal is famous for Own beauty and one of the wonders of the world.</p>
+
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+          Read More...
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+          aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel">Taj Mahal</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                The Taj Mahal is an ivory-white marble mausoleum on the right bank of the river Yamuna in Agra, Uttar
+                Pradesh, India. It was commissioned in 1631 by the fifth Mughal emperor, Shah Jahan to house the tomb of
+                his beloved wife, Mumtaz Mahal; it also houses the tomb of Shah Jahan himself. The tomb is the
+                centrepiece of a 17-hectare (42-acre) complex, which includes a mosque and a guest house, and is set in
+                formal gardens bounded on three sides by a crenellated wall.
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Understood</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card border border-primary ">
+      <img src="./image/Master.jpg" class="card-img-top rounded mx-auto d-block mt-3" alt="...">
+      <div class="card-body text-center">
+        <h5 class="card-title">Red Fort</h5>
+        <p class="card-text">The Red Fort (Lal Qila) is a monument built in 1648 that rises 33 meters (108 ft) above Old
+          Delhi. It was built by the Mughal Emperor Shah Jahan.</p>
+
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdroptwo">
+          Read More...
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="staticBackdroptwo" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+          aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel">Red Fort</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                The Red Fort or Lal Qila is a historic fort in Delhi, India, that historically served as the main
+                residence of the Mughal emperors. Emperor Shah Jahan commissioned construction of the Red Fort on 12 May
+                1639, when he decided to shift his capital from Agra to Delhi. Originally red and white, its design is
+                credited to architect Ustad Ahmad Lahori, who also constructed the Taj Mahal. The fort represents a high
+                point in the Mughal architecture under Shah Jahan and combines Persian palace architecture with Indian
+                traditions.
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Understood</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card border border-primary">
+      <img src="./image/Jahangirs-Palace-Agra-Fort-India-Uttar-Pradesh.jpg"
+        class="card-img-top rounded mx-auto d-block mt-3" alt="...">
+      <div class="card-body text-center">
+        <h5 class="card-title">Agra Fort</h5>
+        <p class="card-text">Agra Fort is a historical fort in the city of Agra in India. It was the main residence of
+          the emperors of the Mughal Dynasty, when the capital was shifted from Agra to Delhi.</p>
+
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdropthree">
+          Read More...
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="staticBackdropthree" data-bs-backdrop="static" data-bs-keyboard="false"
+          tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel">Agra Fort</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                The Agra Fort (Qila Agra) is a historical fort in the city of Agra, and also known as Agra's Red Fort.
+                Mughal emperor Humayun was crowned at this fort in 1530. It was later renovated by the Mughal emperor
+                Akbar from 1565 and the present-day structure was completed in 1573. It served as the main residence of
+                the rulers of the Mughal dynasty until 1638, when the capital was shifted from Agra to Delhi. It was
+                also known as the "Lal-Qila" or "Qila-i-Akbari". Before being captured by the British, the last Indian
+                rulers to have occupied it were the Marathas.
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Understood</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
